@@ -1,4 +1,4 @@
-<h1>حرام</h1><br />
+<h1>الفائدة حرام</h1><br />
 
 🏡 Mortgage Repayment Calculator
 
