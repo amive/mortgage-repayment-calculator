@@ -1,3 +1,4 @@
+<center style="font-size:"25px">حرام</center>
 🏡 Mortgage Repayment Calculator
 
 A simple and interactive mortgage repayment calculator built with HTML, CSS, and JavaScript. It allows users to estimate their monthly repayments based on loan amount, interest rate, and mortgage term.
