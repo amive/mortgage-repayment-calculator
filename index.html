@@ -19,7 +19,7 @@
       <div class="leftSide">
         <h4>
           Mortgage Calculator
-          <span id="clearAll" onclick="clearAll">Clear All</span>
+          <span id="clearAll">Clear All</span>
         </h4>
         <label id="Amountlabel" for="MortgageAmount">Mortgage Amount</label>
         <br />
@@ -28,6 +28,7 @@
           title="Mortgage Amount"
           type="text"
           id="MortgageAmount"
+          class="number-input"
           required
         />
 
@@ -40,6 +41,7 @@
               title="Mortgage Term"
               type="text"
               id="MortgageTerm"
+              class="number-input"
               required
             />
             <span id="years">years</span>
@@ -51,6 +53,7 @@
               title="Interest Rate"
               type="text"
               id="InterestRate"
+              class="number-input"
               required
             />
             <span id="percentage">%</span>
@@ -63,6 +66,8 @@
               style="vertical-align: -2px"
               name="Mortgagetype"
               type="radio"
+              value="repayment"
+              checked
             />Repayment</label
           >
         </div>
@@ -72,12 +77,13 @@
               style="vertical-align: -2px"
               name="Mortgagetype"
               type="radio"
+              value="interest-only"
             />Interest Only</label
           >
         </div>
         <br />
 
-        <button class="calc" onclick="calculateRepayments">
+        <button class="calc">
           <img class="calcimg" src="assets/images/icon-calculator.svg" />
           Calculate Repayments
         </button>
@@ -107,14 +113,21 @@
           <br />
           <div class="repay">
             <p>Your monthly repayments</p>
-            <p id="resultMonthly">£ 1000.11</p>
+            <p id="resultMonthly"></p>
             <hr class="divider" />
             <p>Total you'll repay over the term</p>
-            <p id="totalResult">£ 100000.11</p>
+            <p id="totalResult"></p>
           </div>
         </div>
       </div>
     </div>
+
+    <div id="customAlert" class="alert-box">
+      <p id="alertMessage">This is an alert!</p>
+      <button id="OK">OK</button>
+    </div>
+
     <!-- Completed results end -->
+    <script src="./script.js"></script>
   </body>
 </html>

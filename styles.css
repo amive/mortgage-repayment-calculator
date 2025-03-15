@@ -3,11 +3,15 @@
   src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
     format("truetype");
 }
+html {
+  touch-action: manipulation;
+}
+
 body {
   font-family: Jakarta, sans-serif;
   font-size: 16px;
   font-weight: 600;
-  background-color: #00ffe544;
+  background-color: #e3f4fc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,9 +169,7 @@ input {
   height: 30px;
   border-radius: 2px;
 }
-#typ2 {
-  color: hsl(202, 55%, 16%);
-}
+
 .calcimg {
   scale: 0.7;
   left: 16px;
@@ -226,6 +228,31 @@ input {
   position: relative;
   left: 40px;
 }
+.alert-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: none; /* Initially hidden */
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.alert-box button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: hsl(202, 55%, 16%);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   body {
     overflow: auto;
