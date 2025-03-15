@@ -295,7 +295,7 @@ input {
     right: 273px;
   }
   #InterestRate {
-    width: 95%;
+    width: 255px;
     height: 39px;
     padding-right: 20%;
     background: linear-gradient(to left, hsl(202, 86%, 94%) 10%, white 10%);
