@@ -3,8 +3,6 @@
   src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
     format("truetype");
 }
-* {
-}
 body {
   font-family: Jakarta, sans-serif;
   font-size: 16px;
@@ -24,7 +22,7 @@ h4 {
   left: 65px;
   text-decoration: underline;
   color: hsl(0, 0%, 51%);
-  font-size: 12px;
+  font-size: 11px;
   cursor: pointer;
   user-select: none;
 }
@@ -220,4 +218,167 @@ input {
   scale: 1.3;
   position: relative;
   left: 46px;
+}
+#compParag {
+  font-size: 10px;
+  text-align: left;
+  scale: 1.3;
+  position: relative;
+  left: 40px;
+}
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  h4 {
+    scale: 1.5;
+    position: relative;
+    left: 130px;
+    top: 41px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: hsl(202, 55%, 16%);
+  }
+  #clearAll {
+    position: relative;
+    left: 0px;
+    font-size: 9px;
+    margin-top: 5px;
+  }
+  #MortgageAmount {
+    width: 71.7%;
+    height: 35px;
+    padding: 10px 10px 10px 55px;
+    scale: 0.9;
+    position: relative;
+    right: -5px;
+    background: linear-gradient(to right, hsl(202, 86%, 94%) 15%, white 10%);
+    top: 40px;
+  }
+  #pound {
+    z-index: 1000;
+    position: absolute;
+    top: 157px;
+    left: 57.5px;
+    color: hsl(200, 24%, 40%);
+    scale: 1.3;
+  }
+  #Amountlabel {
+    user-select: none;
+    font-size: 10px;
+    color: hsl(200, 24%, 40%);
+    position: relative;
+    top: 42px;
+    left: 25px;
+  }
+  #MortgageTerm {
+    width: 55.5%;
+    height: 42px;
+    padding-right: 25%;
+    background: linear-gradient(to left, hsl(202, 86%, 94%) 15%, white 10%);
+    position: absolute;
+    top: 235px;
+    left: 37.5px;
+  }
+  #years {
+    position: absolute;
+    top: 249px;
+    left: 80%;
+  }
+  #Termlabel {
+    user-select: none;
+    font-size: 10px;
+    color: hsl(200, 24%, 40%);
+    position: absolute;
+    top: 220px;
+    right: 273px;
+  }
+  #InterestRate {
+    width: 95%;
+    height: 39px;
+    padding-right: 20%;
+    background: linear-gradient(to left, hsl(202, 86%, 94%) 10%, white 10%);
+    position: relative;
+    top: 140px;
+    right: -22px;
+  }
+  #percentage {
+    position: absolute;
+    top: 331px;
+    left: 84.5%;
+  }
+  #Ratelabel {
+    user-select: none;
+    font-size: 10px;
+    color: hsl(200, 24%, 40%);
+    position: relative;
+    top: 138px;
+    right: -25px;
+  }
+  #type1 {
+    width: 79%;
+    position: relative;
+    top: 140px;
+    left: 23px;
+    border-radius: 10px;
+  }
+  #type2 {
+    width: 79%;
+    position: relative;
+    top: 140px;
+    left: 23px;
+    border-radius: 10px;
+  }
+  #labeltype {
+    position: relative;
+    top: 137px;
+    left: 25px;
+  }
+  .calc {
+    width: 250px;
+    position: relative;
+    top: 130px;
+    left: 14%;
+    scale: 1.1;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .calcimg {
+    left: 20px;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+  }
+  .leftSide {
+    width: 100vw !important;
+    height: 64vh !important;
+    border-radius: 0;
+  }
+  .rightSide {
+    width: 100vw !important;
+    height: 36vh !important;
+    border-radius: 0;
+  }
+  #compParag {
+    scale: 1.3;
+    font-size: 10px;
+    left: 55px;
+    top: 0px;
+  }
+  .repay {
+    width: 90%;
+    border-radius: 10px;
+  }
+  #resultMonthly {
+    left: 260px;
+  }
+  #totalResult {
+    left: 56px;
+    font-size: 14px;
+  }
 }
