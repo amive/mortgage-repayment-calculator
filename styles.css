@@ -29,11 +29,8 @@ h4 {
   font-size: 11px;
   cursor: pointer;
   user-select: none;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-#clearAll:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px white;
-  }
 .container {
   overflow: hidden;
   display: flex;
@@ -190,9 +187,11 @@ input {
   justify-content: center;
   background-color: hsl(61, 70%, 52%);
   padding-left: 18px;
-  transition: transform 0.2s, box-shadow 0.2s;
 }
-.calc:hover{
+button{
+  transition: transform 0.2s, box-shadow 0.2s;
+  }
+button:hover{
   transform: scale(1.05);
   box-shadow: 0px 0px 15px #00ff00;
   }
